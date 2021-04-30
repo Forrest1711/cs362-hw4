@@ -7,7 +7,11 @@ class CubeTest(unittest.TestCase):
         self.assertEqual(cubeVol.cubeVol(12), 12*12*12)
 
     def test2(self):
-        self.assertEqual(cubeVol.cubeVol(6.66), 6.66*6.66*6.66)
+        self.assertEqual(cubeVol.cubeVol(-6.66), -6.66*6.66*6.66)
 
     def test3(self):
         self.assertEqual(cubeVol.cubeVol("cube"), "cube"*"cube"*"cube")
+
+
+if __name__ == '__main__':
+    unittest.main()
